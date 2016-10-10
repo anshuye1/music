@@ -1,0 +1,704 @@
+*{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+body{
+  color: #333;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: poppin,'PingFang'
+}
+@import "mains";
+audio{
+  display: none;
+}
+
+////header开始//////////////////////////////////////////////
+//.header-box{
+//  width:100%;
+//  height:50px;
+//  background: #000;
+//  dispiay:none;
+//}
+//.header{
+//  width:1200px;
+//  height:50px;
+//  background: rgba(0,0,0,0.9);
+//  margin:0 auto;
+//  display: none;
+//  a{
+//    display: block;
+//    @include yuan(50px);
+//    margin-left:100px;
+//    background: url(../img/5.jpg) no-repeat center center/auto 50px border-box content-box;
+//    float:left;
+//    transition: transform 100s ease;
+//  }
+//  .ge-name{
+//    width:500px;
+//    height:50px;
+//    background:linear-gradient(#008,#121);
+//    float:right;
+//    color: #fff;
+//    text-align: center;
+//    font-size:30px;
+//    line-height: 50px;
+//    position: relative;
+//    overflow: hidden;
+//    .ge-box{
+//      width:100%;
+//      height:100px;
+//      position: absolute;
+//    }
+//    .wz{
+//      width: 100%;
+//      height:50px;
+//      //background: red;
+//      float: left;
+//    }
+//  }
+//}
+//
+////歌曲列表////////////////////////////////////////////////
+//.music-list-box{
+//  width:100%;
+//  height:500px;
+//  background: #123;
+//}
+//.music-list{
+//  width:1200px;
+//  height:500px;
+//  overflow: auto;
+//  background: #000;
+//  margin:0 auto;
+//  li{
+//    width:100%;
+//    height:30px;
+//    border-bottom:1px solid #333;
+//    color: #fff;
+//    font-size:17px;
+//    line-height: 30px;
+//    cursor: pointer;
+//    &.ge{
+//      color: blue;
+//      background: #0c0d17;
+//    }
+//    &:hover{
+//      color: blue;
+//    }
+//    .tp{
+//      width:30px;
+//      height:30px;
+//      background: url(../img/bofang.png) no-repeat center center/30px 30px;
+//      float: left;
+//      &.zt{
+//        background: url(../img/zt.png) no-repeat center center/30px 30px;
+//      }
+//    }
+//    .tp1{
+//      width:30px;
+//      height:30px;
+//      background: url(../img/bf1.png) no-repeat center center;
+//      float: right;
+//      &.tp2{
+//        background: url(../img/bfbf.png) no-repeat center center;
+//      }
+//    }
+//    .shanchu{
+//      width:10%;
+//      height:100%;
+//      background: url(../img/shanchu.png) no-repeat center center;
+//      float: right;
+//    }
+//  }
+//}
+//
+/////////////////footer开始//////////////////////////////////////////////
+//.footer{
+//  width:100%;
+//  height:60px;
+//  background: #000;
+//}
+//.box{
+//  width:1200px;
+//  height:60px;
+//  box-sizing: border-box;
+//  background: rgba(0,0,0,0.9);;
+//  padding:0 20px;
+//}
+////播放动能
+//.qh{
+//  width:280px;
+//  height:60px;
+//  float: left;
+//  border-radius: 8px;
+//  span{
+//    display: block;
+//    width:50px;
+//    height:100%;
+//    float: left;
+//    color: #fff;
+//    font-size:24px;
+//    text-align: center;
+//    cursor: pointer;
+//    line-height: 50px;
+//    background:url(../img/icon.png) no-repeat -77px -118px;
+//  }
+//  .next{
+//    background:url(../img/icon.png) no-repeat -207px -118px;
+//  }
+//  .bofang{
+//    width:40%;
+//    height:60px;
+//    background:url(../img/bofang.png) no-repeat center center;
+//    float:left;
+//    &.zanting{
+//      background: url(../img/zt.png) no-repeat center center;
+//    }
+//  }
+//}
+////进度条功能
+//.jindu{
+//  width:882px;
+//  height:10px;
+//  background: rgba(56,57,78,0.9);
+//  border-radius: 4px;
+//  top:150px;
+//  left:0;
+//  right: 0;
+//  margin: 0 auto;
+//  position: relative;
+//  .yuan{
+//    @include yuan(16px);
+//    position: absolute;
+//    background: red;
+//    cursor: pointer;
+//    top:-3px;
+//    left:-8px;
+//  }
+//}
+////播放时长
+//.shichang{
+//  width:20%;
+//  height:60px;
+//  margin: 0 10px;
+//  display: block;
+//  float: right;
+//  border-radius:10px;
+//  line-height: 60px;
+//  color: #fff;
+//  overflow: hidden;
+//  span{
+//    display: block;
+//    text-align: center;
+//    width:50%;
+//    height:100%;
+//    font-size:20px;
+//    background:linear-gradient(#331,#330033) no-repeat center center;
+//    float: left;
+//  }
+//}
+////静音、音量功能
+//.jingyin{
+//  width:10%;
+//  height:60px;
+//  margin:0 10px;
+//  background:url(../img/jy1.png) no-repeat center center;
+//  float: left;
+//  &.jy{
+//    background:url(../img/jy.png) no-repeat center center;
+//  }
+//}
+//.yinliang{
+//  top:10px;
+//  border-radius: 4px;
+//  width:20%;
+//  height:10px;
+//  background: linear-gradient(#a78579,#00aa22);
+//  float: left;
+//  position: relative;
+//  .yuan{
+//    cursor: pointer;
+//    @include yuan(16px);
+//    position: absolute;
+//    background: darkred;
+//    top:-2px;
+//    left:98%;
+//  }
+//}
+////循环功能
+//.xunhuan{
+//  width:16%;
+//  height:100%;
+//  background: url(../img/xh1.png) no-repeat center center;
+//  float: left;
+//  &.dq{
+//    background: url(../img/xh2.png) no-repeat center center;
+//  }
+//  &.sj{
+//    background: url(../img/xh3.png) no-repeat center center;
+//  }
+//}
+//
+///////////////////////////响应式////////////////////////////////////
+@include onm{
+  .bfq-box{
+    width:100%;
+    height:auto;
+    background: rgba(0,0,0,0.1);
+    .bfq-box1{
+      width:100%;
+      height:auto;
+      background: rgba(0,0,0,0.1);
+    }
+  }
+  .header{
+    width:100%;
+    height:510px;
+    background: #a78579;
+    top:0;
+    left:0;
+    background:url(../img/5.jpg) no-repeat center center;
+    position: relative;
+    a{
+      display: block;
+      @include yuan(260px);
+      @include left-right();
+      bottom:180px;
+      box-shadow: #0c0d17 0 10px 10px;
+      background:url(../img/5.jpg) no-repeat center center/auto 260px border-box content-box;
+    }
+    .ge-name{
+      width:260px;
+      font-size:16px;
+      height:50px;
+      @include left-right;
+      bottom:60px;
+      background: rgba(3,2,2,0.8);
+      color: #fff;
+      text-align: center;
+      line-height: 100px;
+      border-radius: 8px;
+    }
+  }
+  .box{
+    width:100%;
+    position: relative;
+    top:380px;
+  }
+  .music-list{
+    width: 100%;
+    height:500px;
+    top:-500px;
+    left:0;
+    overflow: auto;
+    box-sizing: border-box;
+    background: linear-gradient(#002,#022);
+    float: left;
+    margin:0 auto;
+    padding: 20px;
+    position: absolute;
+    top:500px;
+    li{
+      width:auto;
+      height:80px;
+      box-sizing: content-box;
+      padding:0 10px;
+      line-height: 80px;
+      font-size:17px;
+      text-align: left;
+      color: #fff;
+      border-bottom: 1px solid #000;
+      background: #221f28;
+      cursor: pointer;
+      &.ge{
+        color: blue;
+        background: #0c0d17;
+      }
+      &:hover{
+        color: blue;
+      }
+      .tp{
+        width:40px;
+        height:40px;
+        background: url(../img/bofang.png) no-repeat center center;
+        float: left;
+        margin:20px;
+        &.zt{
+          background: url(../img/zt.png) no-repeat center center;
+        }
+      }
+      .tp1{
+        width:40px;
+        height:40px;
+        background: url(../img/bf1.png) no-repeat center center;
+        float: right;
+        margin:20px;
+        &.tp2{
+          background: url(../img/bfbf.png) no-repeat center center;
+        }
+      }
+      .shanchu{
+        width:10%;
+        height:100%;
+        background: url(../img/shanchu.png) no-repeat center center;
+        float: right;
+      }
+    }
+  }
+  .jindu{
+    width:100%;
+    top:500px;}
+  .xunhuan{
+    width:10%;
+  }
+}
+
+///////////////播放器/////////////////////
+.bfq-box{
+  width:100%;
+  height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  background: linear-gradient(#9b8402,#3c2801);
+  .zz{
+    font-size:24px;
+    font-weight:700;
+    color: rgba(233,145,165,0.6);
+  }
+  .bfq-box1{
+    width:1158px;
+    height:auto;
+    background:rgba(0,255,0,0.4);
+    margin:0 auto;
+  }
+}
+.music-list-box{
+  width:60%;
+  height:550px;
+  float: left;
+}
+.ul-header{
+  width:100%;
+  height:100px;
+  div{
+    width:120px;
+    height:36px;
+    border:1px solid rgba(255,255,255,0.2);
+    float: left;
+    margin:25px;
+    cursor: pointer;
+    span{
+      width:20px;
+      height:20px;
+      margin:10px 0 0 28px;
+      float: left;
+      background: red;
+    }
+    .u1{
+      background: url(../img/2.png) no-repeat -60px -20px;
+      &.like1{
+        background: url(../img/2.png) no-repeat 0 -80px;
+      }
+    }
+    .u2{
+      background: url(../img/2.png) no-repeat -20px -20px;
+    }
+    .u3{
+      background: url(../img/2.png) no-repeat -40px -240px;
+    }
+    .u4{
+      background: url(../img/2.png) no-repeat -100px -20px;
+    }
+    b{
+      width:60px;
+      height:36px;
+      float: left;
+      line-height: 36px;
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+}
+.music-list{
+  width: 694px;
+  height:400px;
+  overflow: auto;
+  box-sizing: border-box;
+  float: left;
+  position: absolute;
+  li{
+    width:600px;
+    height:50px;
+    margin-left:30px;
+    box-sizing: content-box;
+    line-height: 50px;
+    font-size:14px;
+    text-align: left;
+    color: #fff;
+    border-bottom: 1px dashed rgba(255,255,255,0.2);
+    cursor: pointer;
+    opacity: 0.8;
+    transition:opacity .8s ease;
+    &.ge{
+      opacity: 1;
+      font-size:18px;
+    }
+    &:hover{
+      opacity: 1;
+    }
+    .tp{
+      width:20px;
+      height:20px;
+      margin:15px;
+      background: url(../img/2.png) no-repeat -80px -220px;
+      float: left;
+      &.zt{
+        background:url(../img/1.png) no-repeat -30px 0;
+      }
+    }
+    .tp1{
+      width:20px;
+      height:20px;
+      background: url(../img/2.png) no-repeat -40px -20px;
+      margin:16px 0 0 0;
+      float: right;
+      &.tp2{
+        background: url(../img/w.gif) no-repeat center center content-box;
+      }
+    }
+    .shanchu{
+      width:20px;
+      height:20px;
+      margin:15px;
+      background: url(../img/2.png) no-repeat -100px -20px;
+      float: right;
+    }
+    .xuanze{
+      float:right;
+      margin-top:18px;
+      background: #fff;
+    }
+  }
+}
+.header-box{
+  width:40%;
+  height:550px;
+  float: left;
+  position: relative;
+  a{
+    display: block;
+    @include yuan(150px);
+    position: absolute;
+    @include left-right;
+    box-shadow: #0c0d17 0 10px 10px;
+    background:url(../img/5.jpg) no-repeat center center/auto 150px border-box content-box;
+  }
+  .ge-name{
+    width:100%;
+    height:50px;
+    top:170px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size:24px;
+    position: relative;
+    overflow: hidden;
+    .ge-box{
+      width:100%;
+      height:100px;
+      position: absolute;
+    }
+    .wz{
+      width: 100%;
+      height:50px;
+      float: left;
+    }
+  }
+  .geci{
+    width:100%;
+    height:200px;
+    top:180px;
+    position: relative;
+    overflow: hidden;
+    .geci-box{
+      width:100%;
+      height:auto;
+      position: absolute;
+      top:-30px;
+      left:0;
+      .geci-inner{
+        color: #fff;
+        text-align: center;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+
+.footer{
+  width:100%;
+  height:60px;
+  float: left;
+  position: fixed;
+  bottom:20px;
+  left:0;
+}
+.foo-box{
+  width:1158px;
+  height:60px;
+  margin:0 auto;
+  background:linear-gradient(#9b8402,#3c2801);
+}
+.qh{
+  width:260px;
+  height:60px;
+  float:left;
+}
+.qh1{
+  width:190px;
+  height:100%;
+  float:left;
+  margin:0 35px;
+  span{
+    width:30px;
+    height:20px;
+    background:url(../img/1.png) no-repeat 0 -30px;
+    float: left;
+    display: block;
+    margin:20px 0 0 0;
+  }
+  .bofang{
+    width:25px;
+    margin:15px 50px 0;
+    height:30px;
+    border-radius:4px;
+    background:url(../img/1.png) no-repeat 0 0;
+    &.zanting{
+      background:url(../img/1.png) no-repeat -30px 0;
+    }
+  }
+  .next{
+    background:url(../img/1.png) no-repeat 0 -52px;
+  }
+}
+.jd-box{
+  width:550px;
+  height:100%;
+  float: left;
+  .q-name{
+    width:50%;
+    height:50%;
+    float: left;
+    color: #fff;
+    line-height:30px;
+  }
+  .shichang{
+    width:50%;
+    height:50%;
+    float: left;
+    color: #fff;
+    line-height: 30px;
+    span{
+      display: block;
+      width:60px;
+      height:100%;
+      float: right;
+    }
+  }
+  .jindu{
+    width:100%;
+    height:6px;
+    float: left;
+    background: rgba(255,255,255,0.5);
+    border-raduis:4px;
+    position: relative;
+    .jd1{
+      width:1px;
+      height:100%;
+      background: #fff;
+    }
+    .yuan{
+      @include yuan(10px);
+      position: absolute;
+      top:-2px;
+      left:0;
+      background: rgba(255,255,255,0.8);
+    }
+  }
+}
+.xh-box{
+  width:170px;
+  height:100%;
+  float: left;
+  div{
+    width:25px;
+    height:20px;
+    float: left;
+    margin:18px 10px;
+    background: green;
+  }
+  .xunhuan{
+    width:30px;
+    height:24px;
+    margin:16px 10px 0 40px;
+    background:url(../img/1.png) no-repeat 0 -205px;
+    &.dq{
+      background:url(../img/1.png) no-repeat 0 -232px;
+    }
+    &.sj{
+      height:20px;
+      margin:18px 10px 0 40px;;
+      background:url(../img/1.png) no-repeat 0 -74px;
+    }
+  }
+  .like{
+    background:url(../img/1.png) no-repeat 0 -96px;
+    &.like1{
+      background:url(../img/1.png) no-repeat -30px -96px;
+    }
+  }
+  .xz{
+    background:url(../img/1.png) no-repeat 0 -120px;
+  }
+}
+.yl-box{
+  width:178px;
+  height:100%;
+  float: left;
+  .jingyin{
+    width:30px;
+    height:20px;
+    margin:20px;
+    background:url(../img/1.png) no-repeat 0 -144px;
+    float: left;
+    &.jy{
+      background:url(../img/1.png) no-repeat 0 -182px;
+    }
+  }
+  .yinliang{
+    width:100px;
+    height:6px;
+    float: left;
+    margin:26px 0;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.5);
+    position: relative;
+    .yl1{
+      width:100%;
+      height:100%;
+      background: #fff;
+    }
+    .yuan{
+      position: absolute;
+      @include yuan(10px);
+      background: rgba(255,255,255,0.9);
+      top:-2px;
+      left: 94%;
+    }
+  }
+}
